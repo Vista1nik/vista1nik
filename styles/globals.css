@@ -27,6 +27,11 @@ a:hover {
   border-bottom: 1px solid #fff;
 }
 
+img {
+  border-radius: 4px;
+  user-select: none;
+}
+
 * {
   box-sizing: border-box;
 }
