@@ -1,15 +1,27 @@
 const Layout = props => (
-    <div style={{
-        width: '45rem',
-        margin: 'auto'
-    }}>
+    <div className="layout">
+        <style jsx>{`
+            .layout {
+                width: 45rem;
+                margin: auto;
+            }
+
+            .footer {
+                margin-top: 32px;
+                color: #666
+            }
+
+            @media only screen and (max-width: 768px) {
+                .layout {
+                    padding: 0 24px;
+                    width: 100%;
+                }
+            }
+        `}</style>
         <div>
             {props.children}
         </div>
-        <div style={{
-                color: '#666',
-                marginTop: 32
-            }}>
+        <div className="footer">
             <p>{new Date().getFullYear()} © vista1nik</p>
         </div>
     </div>
