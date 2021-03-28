@@ -22,7 +22,7 @@ const Layout = props => (
             {props.children}
         </div>
         <div className="footer">
-            <p>{new Date().getFullYear()} © vista1nik</p>
+            <p>{new Date().getFullYear()} © vista1nik • <a href="https://github.com/vista1nik/vista1nik">source</a></p>
         </div>
     </div>
 )
